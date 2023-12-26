@@ -449,28 +449,35 @@ Created by pixpalette.com - online design magazine -->
 	                <li>Tickets: <span class="ticket-count"></span></li>
                     <li>Price: <span class="ticket-amount"></span></li>
                     <hr>
-                    <li>Total: <span class="total-amount"></span></li>
+                    <li>Total: <span  class="total-amount"></span></li>
     			</ul>
             </div>
             
             <div class="contactForm">	
                 <h3>Share your contact Details</h3>
-                <form>
+                <form id="paymentForm">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter your name">
+                   <label for="email">Email Address</label>
+                    <input  class="form-control" type="email" id="email-address" required />
                   </div>
-                  
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter your Email ID">
+                    <label for="amount">Amount</label>
+                    <input readonly class="form-control"  type="tel" id="amount"  />
                   </div>
-                  
                   <div class="form-group">
-                     <input type="text" class="form-control" placeholder="Enter your Mobile No.">
+                    <label for="first-name">First Name</label>
+                    <input  class="form-control"  type="text" id="first-name" />
                   </div>
-                  
-        		  <a type="submit" class="btn">Proceed to Payment</a>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input  class="form-control"  type="text" id="last-name" />
+              </div>
+                  <div class="form-submit">
+                    <button type="submit" onclick="payWithPaystack()"> Pay </button>
+                  </div>
                 </form>
             </div>
+            
         
         
         
@@ -485,5 +492,7 @@ Created by pixpalette.com - online design magazine -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/allscript.js"></script>
+    <script src="js/paystack.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
   </body>
 </html>

@@ -84,6 +84,7 @@ function activeTicket(target, inputValue, ticketPrice, total, ticketType) {
 		$('.ticket-count').html(inputValue);
 		$('.ticket-amount').html(ticketPrice);
 		$('.total-amount').html(total);
+        $('.amount').html(total);
 	} else {
 		$('#buyTicket .ticketBox').removeClass('inActiveTicket');
 		$(target).parents('.ticketBox').removeClass('activeTicket inActiveTicket');
@@ -92,5 +93,6 @@ function activeTicket(target, inputValue, ticketPrice, total, ticketType) {
 		$('.ticket-count').html(inputValue);
 		$('.ticket-amount').html(ticketPrice);
 		$('.total-amount').html(total);
+        $('.amount').html(total);
 	}
 }
