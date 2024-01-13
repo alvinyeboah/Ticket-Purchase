@@ -1,0 +1,15 @@
+{
+  "name": "sika--party",
+  "version": "1.0.0",
+  "description": "Stage is a stylish, one page theme for event ticket booking. It has a clean, minimal and modern design ideal for any type of event ticket booking. It is 100% mobile-friendly and built with Bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}
